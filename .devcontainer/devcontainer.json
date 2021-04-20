@@ -17,9 +17,13 @@
 
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
+		"bierner.markdown-mermaid",
 		"davidnussio.vscode-jq-playground",
 		"dbaeumer.vscode-eslint",
-		"humao.rest-client"
+		"humao.rest-client",
+		"jebbs.plantuml",
+		"joaompinto.vscode-graphviz",
+		"randomfractalsinc.vscode-vega-viewer"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.

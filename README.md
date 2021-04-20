@@ -23,9 +23,9 @@ We intend to support additional visualization engines down the road, candidates 
 
 ## Visual Studio Code development container
 
-The provided VS Code development container includes the following extensions and tools to support crafting visualizations with the supported languages:
+The provided [Visual Studio Code](https://code.visualstudio.com/) development container includes the following extensions and tools to support crafting visualizations with the supported languages:
 
-* [Vega Viewre](https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.vscode-vega-viewer)
+* [Vega Viewer](https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.vscode-vega-viewer)
 * [PlantUML](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml)
 * [Mermaid Markdown Syntax Highlighting](https://marketplace.visualstudio.com/items?itemName=bpruitt-goddard.mermaid-markdown-syntax-highlighting)
 * [Graphviz Markdown Preview](https://marketplace.visualstudio.com/items?itemName=geeklearningio.graphviz-markdown-preview)

@@ -10,11 +10,11 @@ Visualize with AWS currently supports these visualization grammars:
 * [Vega-Lite](https://vega.github.io/vega-lite/)
 * [Svgbob](https://ivanceras.github.io/svgbob-editor/)
 * [PlantUML](https://plantuml.com/)
-    * includes architecture diagram support for [AWS](https://github.com/awslabs/aws-icons-for-plantuml), [Azure](https://github.com/plantuml-stdlib/Azure-PlantUML), and [C4](https://github.com/plantuml-stdlib/C4-PlantUML)
+    * includes [PlantUML Standard Library](https://plantuml.com/stdlib) architecture diagram support for [C4](https://github.com/plantuml-stdlib/C4-PlantUML), [AWS](https://github.com/awslabs/aws-icons-for-plantuml), and [Azure](https://github.com/plantuml-stdlib/Azure-PlantUML)
 * [Mermaid](https://mermaid-js.github.io/mermaid/#/)
 * [Graphviz](https://graphviz.org/)
 
-We intend to support additional visualization engines down the road, candidates in no particular order are:
+We *intend* to support additional visualization engines down the road, candidates in no particular order are:
 
 * [Charts.xkcd](https://github.com/timqian/chart.xkcd)
 * [Excalidraw](https://excalidraw.com/)

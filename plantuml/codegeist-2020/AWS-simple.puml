@@ -1,0 +1,29 @@
+@startuml
+!define AWSPuml https://raw.githubusercontent.com/awslabs/aws-icons-for-plantuml/master/dist
+!includeurl AWSPuml/AWSCommon.puml
+
+' Uncomment the following line to create simplified view
+!includeurl AWSPuml/AWSSimplified.puml
+
+!includeurl AWSPuml/General/Users.puml
+!includeurl AWSPuml/Mobile/APIGateway.puml
+!includeurl AWSPuml/SecurityIdentityAndCompliance/Cognito.puml
+!includeurl AWSPuml/Compute/all.puml
+!includeurl AWSPuml/Database/DynamoDB.puml
+
+left to right direction
+
+Users(jira, "Jira users", "millions of users")
+Users(confluence, "Confluence users", "millions of users")
+APIGateway(renderingAPI, "Rendering API", "declarative charts/diagrams")
+ElasticContainerService(renderECSVisualization, "Docker engines", "return jwt")
+Lambda(renderLambdaVisualization, "Lambda engines", "return jwt")
+DynamoDB(atlassian, "Atlassian Cloud", "one entry per user")
+
+jira--> renderingAPI
+confluence--> renderingAPI
+renderingAPI --> renderECSVisualization
+renderingAPI --> renderLambdaVisualization
+renderECSVisualization--> atlassian
+renderLambdaVisualization--> atlassian
+@enduml

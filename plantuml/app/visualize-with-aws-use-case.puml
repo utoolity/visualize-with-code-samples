@@ -1,0 +1,10 @@
+@startuml
+top to bottom direction
+actor Author
+actor User
+rectangle "Visualize with AWS" {
+  Author --> (define diagram)
+  (define diagram) .> (diagram) : renders
+  (diagram) --> User
+}
+@enduml

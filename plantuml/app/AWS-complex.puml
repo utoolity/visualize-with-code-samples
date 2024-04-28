@@ -1,34 +1,29 @@
 @startuml
 !include <awslib/AWSCommon>
 !include <awslib/AWSSimplified.puml>
-!include <awslib/Compute/all.puml>
-!include <awslib/mobile/all.puml>
-!include <awslib/general/all.puml>
-!include <awslib/GroupIcons/all.puml>
-!include <awslib/Storage/all.puml>
-!include <awslib/ManagementAndGovernance/all.puml>
-!include <awslib/CustomerEngagement/all.puml>
-!include <awslib/MachineLearning/all.puml>
-!include <awslib/NetworkingAndContentDelivery/all.puml>
-!include <awslib/Database/all.puml>
 !include <awslib/ApplicationIntegration/all.puml>
-!include <awslib/ApplicationIntegration/SNS.puml>
-!include <awslib/CustomerEngagement/SESEmail.puml>
+!include <awslib/BusinessApplications/all.puml>
+!include <awslib/Compute/all.puml>
+!include <awslib/Database/Aurora.puml>
+!include <awslib/General/all.puml>
+!include <awslib/GroupIcons/all.puml>
+!include <awslib/MachineLearning/all.puml>
+!include <awslib/ManagementGovernance/CloudWatch.puml>
+!include <awslib/Storage/all.puml>
 
 
-
-'Compute/General
-'Storage/SimpleStorageServiceS3.png
+'Storage/SimpleStorageService.png
+'ApplicationIntegration/APIGateway.png
 'ApplicationIntegration/SQS.png
-'Compute/Lambda.png
-'Compute/EC2
-'ManagementAndGovernance/CloudWatch.png
-'CustomerEngagement/SESEmail.png
-'MachineLearning/SageMaker.png
-''Mobile/APIGateway.png
-'NetworkingAndContentDelivery/APIGateway2.png
-'Database/Aurora.png
 'ApplicationIntegration/SQSQueue.png
+'Compute/General
+'Compute/EC2
+'Compute/Lambda.png
+'CustomerEngagement/SESEmail.png
+'Database/Aurora.png
+'MachineLearning/SageMaker.png
+'ManagementGovernance/CloudWatch.png
+'NetworkingContentDelivery/APIGateway2.png
 
 
 skinparam linetype polyline
@@ -41,7 +36,7 @@ General(IngestionApp, "Ingestion App", " ")
 General(ChunkingApp, "Chunking Orchestration App", " ")
 }
 
-SimpleStorageServiceS3(S3Staging, "Amazon S3 Staging Bucket", " ")
+SimpleStorageService(S3Staging, "Amazon S3 Staging Bucket", " ")
 SQS(SQSIngest, "Amazon SQS Ingest Queue", " ")
 
 Lambda(LambdaTrigger, "AWS Lambda Trigger Function", " ")
@@ -87,7 +82,7 @@ SQSSingleFileQueue -down-> DLQ3
 'bottom right section 
 '-------------------------------------------------------------
 
-SimpleStorageServiceS3(S3Images, "Amazon S3 Images Bucket", " ")
+SimpleStorageService(S3Images, "Amazon S3 Images Bucket", " ")
 EC2(EC2DLQFailsafeApp, "DLQ Failsafe App on EC2", " ")
 SQS(SQSConvertedImageQueue, "Amazon SQS Converted Image Queue", " ")
 Lambda(LambdaInferenceInvocation, "Inference Invocation Lambda Function", " ")

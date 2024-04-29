@@ -2,9 +2,10 @@
 !include <awslib/AWSCommon.puml>
 !include <awslib/AWSSimplified.puml>
 !include <awslib/Compute/all.puml>
+!include <awslib/Containers/all.puml>
 !include <awslib/Database/DynamoDB.puml>
-!include <awslib/general/users.puml>
-!include <awslib/mobile/apigateway.puml>
+!include <awslib/General/users.puml>
+!include <awslib/ApplicationIntegration/APIGateway.puml>
 
 left to right direction
 

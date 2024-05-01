@@ -2,7 +2,7 @@
 top to bottom direction
 actor Author
 actor User
-rectangle "Visualize with AWS" {
+rectangle "Visualize with Code / AWS" {
   Author --> (define diagram)
   (define diagram) .> (diagram) : renders
   (diagram) --> User

@@ -1,10 +1,10 @@
-# Visualize with AWS (Samples)
+# Visualize with Code / AWS (Samples)
 
-This repository provides samples for [Visualize with AWS](https://marketplace.atlassian.com/search?query=%22Visualize%20with%20AWS%22), a Utoolity solution to maintain and render declarative charts and diagrams as code alongside your Jira issues and Confluence pages.
+This repository provides samples for [Visualize with Code / AWS](https://marketplace.atlassian.com/search?query=%22Visualize%20with%20Code%22), a Utoolity solution to maintain and render declarative charts and diagrams as code alongside your Jira issues and Confluence pages.
 
 ## Supported visualization languages
 
-Visualize with AWS currently supports these visualization grammars:
+Visualize with Code / AWS currently supports these visualization grammars:
 
 * [Vega](https://vega.github.io/vega/)
 * [Vega-Lite](https://vega.github.io/vega-lite/)
